@@ -1,58 +1,143 @@
-#header {
-  background: #333333;
-}
-
-.navbar {
+#navBar{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: #FFFFFF;
-  padding: 24px 20px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: rgb(4, 15, 24);
+  /* position: fixed; */
+  /* right: 0; */
+  /* left: 0; */
+  /* top:0; */
+  /* z-index: 100; */
 }
-
-.nav-links {
+#LOGO{
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  gap: 24px;  
+}
+#navBarLogo{
+  width: 50px;
+  border: 3px solid black;
+  border-radius: 30px;
+  background-color: rgb(233, 225, 179);
+  
+}
+#navBarTitle{
+  padding-left: 10px;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+
 }
 
-.nav-links li {
-  list-style: none;
+.navMenuButton{
+  font-size: 10px;
+  color: black;
+  background-color: rgb(178, 203, 211);
+  padding: 3px;
+  margin-left: 3px;
+  /* border: 1px solid black;  */
+  border-radius: 30px;
+  text-decoration: none;
+  
 }
 
-.nav-links a {
-  color: #FFFFFF;
+.navMenuButtonGlow{
+  font-size: 10px;
+  color: black;
+  background-color: #a4fcfc;
+  padding: 3px;
+  margin-left: 3px;
+  /* border: 1px solid black;  */
+  border-radius: 30px;
+  text-decoration: none;
+  
+}
+#menu-btn{
+  display: none;
+  font-size: 15px;
+  color: black;
+  background-color: rgb(212, 236, 236);
+  padding: 5px;
+  margin-left: 3px;
+  border: 1px solid black; 
+  border-radius: 30px;
   text-decoration: none;
 }
-
-.menu-toggle {
-  display: none;
+#options{
+  margin-top: 60px;
+  background-color: rgba(9, 11, 12, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
-.menu-btn {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
+#options ul{
+  list-style-type: none;
+  text-align: center;
+}
+.navMenuButton1{
+  display: block;
+  width: 1000px;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(31, 49, 49,.5);
+  text-shadow: 1px 1px 3px black;
+  padding: 5px;
+  margin-left: 3px;
+  /* border: 1px solid black;  */
+  /* border-radius: 30px; */
+  text-decoration: none;
+  
+}
+.navMenuButtonGlow1{
+  text-shadow: 1px 1px 3px black;
+  display: block;
+  width: 1000px;
+  font-size: 15px;
+  color: rgb(255, 249, 249);
+  background-color: #a4fcfc;
+  
+  padding: 5px;
+  margin-left: 3px;
+  /* border: 1px solid black;  */
+  /* border-radius: 30px; */
+  text-decoration: none;
+  
 }
 
-@media only screen and (max-width: 768px) {
-  .nav-links {
-    width: 100%;
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+  .navMenuButtonGlow{
     display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    text-align: center;
-    background: #333333;
-    padding-bottom: 20px;
+      
+  }
+ 
+
+  #menu-btn{
+      display: block;
   }
   
-  .menu-btn {
-    display: inline-block;
+  .navMenuButton{
+      display: none;
   }
 
-  .menu-toggle:checked~.nav-links {
-    display: flex;
-  }
 }

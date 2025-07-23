@@ -6,23 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> my portfolio </title>
   <link rel="stylesheet" href="/assets/styles/style.css">
+  <script defer src="javascript.js"> </script>
 </head>
 
 <body>
   <!-- Header -->
-  <header id="header">
-    <nav class="navbar container">
-      <div class="logo"> </div>
-      <div class="hero-image">
-        <img src="/assets/images/logo.jpg" style="height: 50px;width: 50px;">
-      </div>  
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/about.html">About</a></li>
-        <li><a href="pages/service.html">Services</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
-      </ul>
+  <header>
+    <nav id="navBar">
+      <div id="LOGO">
+          <div><img src="assets/images/logo.jpg" id="navBarLogo"></div>
+          <div><h4 id="navBarTitle">Analee</h4></div>
+      </div>
+
+      <div id="navBarMenu">
+          <a href="index.html" class="navMenuButtonGlow" >Home</a>
+          <a href="pages/about.html" class="navMenuButton">About</a>
+          <a href="pages/service.html" class="navMenuButton">Services</a>
+          <a href="pages/contact.html" class="navMenuButton">Contact</a>
+          
+          <button id="menu-btn">☰</button>
+         
+          
+      </div>
+
     </nav>
+    <div id="options">
+      <ul id="menu" style="display: none;">
+      <li><a href="index.html" class="navMenuButtonGlow1">Home</a></li>
+      <li><a href="pages/about.html" class="navMenuButton1">About</a></li>
+      <li><a href="pages/service.html" class="navMenuButton1">Services</a></li>
+      <li><a href="pages/contact.html" class="navMenuButton1">Contact</a></li>
+   </ul></div>
   </header>
 
   <!-- Main Content -->

@@ -1,0 +1,25 @@
+.card {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.card-header img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-header h2 {
+  font-size: 20px;
+  padding: 14px 18px;
+}
+
+.card-body {
+  padding: 0 18px;
+}
+
+.card-footer {
+  padding: 14px 18px;
+}

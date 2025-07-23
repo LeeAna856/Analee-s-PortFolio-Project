@@ -1,0 +1,9 @@
+#footer {
+  background: #333333;
+  color: #FFFFFF;
+  padding: 24px 20px;
+}
+
+#footer p {
+  text-align: center;
+}

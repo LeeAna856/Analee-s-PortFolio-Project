@@ -18,6 +18,7 @@ xl: 1280px -- larger wide desktop size
 @import "contact.css";
 @import "submission.css";
 @import "footer.css";
+@import "about.css";
 
 * {
   margin: 0;

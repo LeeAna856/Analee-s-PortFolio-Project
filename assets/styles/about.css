@@ -1,17 +1,2 @@
 
 
-.about h2{
-    color: rgb(0, 0, 0);
-    background-color: rgba(237, 242, 252, 0.1);
-    border-radius: 100px;
-    padding: 10px;
-    font-weight: bold;
-    
-.about p{
-  text-shadow: 1px 2px 2px rgb(248, 248, 248);
-}
-
-@media(max-width:768px){
-
-}
-    
